@@ -1,1 +1,193 @@
-gaming minhaj setup
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Minhaj Setup</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@300;400;700&family=Noto+Sans+Bengali:wght@400;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: 'Hind Siliguri', 'Noto Sans Bengali', 'Poppins', 'Roboto', sans-serif !important;
+    }
+
+    body {
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: clamp(18px, 4vw, 28px);
+    }
+
+    p {
+      font-size: clamp(12px, 3.2vw, 16px);
+      line-height: 1.6;
+    }
+
+    h2 {
+      font-size: clamp(16px, 3.5vw, 22px);
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 15px 0;
+    }
+
+    .social a {
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-weight: 600;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .telegram { background: #229ED9; box-shadow: 0 0 12px #229ED9; }
+    .youtube { background: #ff0000; box-shadow: 0 0 12px #ff0000; }
+    .facebook { background: #1877F2; box-shadow: 0 0 12px #1877F2; }
+
+    .social a:hover { transform: scale(1.1); }
+
+    .card {
+      margin: 20px auto;
+      padding: 20px;
+      width: 80%;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+      background: linear-gradient(45deg, #22c55e, #4ade80);
+      box-shadow: 0 0 15px #22c55e;
+      font-size: clamp(14px, 3.5vw, 18px);
+      font-weight: 600;
+      color: black;
+    }
+
+    .card:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 25px #22c55e, 0 0 50px #4ade80;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.7);
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .popup-content {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      width: min(340px, 90%);
+      box-shadow: 0 0 25px #38bdf8;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      font-weight: 500;
+      transition: 0.3s;
+      font-size: clamp(12px, 3vw, 15px);
+    }
+
+    .download {
+      background: linear-gradient(45deg, #22c55e, #16a34a);
+      box-shadow: 0 0 10px #22c55e;
+    }
+
+    .close {
+      background: linear-gradient(45deg, #ef4444, #dc2626);
+      box-shadow: 0 0 10px #ef4444;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🚀 আমার f</h1>
+
+  <div class="social">
+    <a class="telegram" href="https://t.me/mdminhajafrad1" target="_blank">Telegram</a>
+    <a class="youtube" href="https://youtube.com/@gaming_minhaj_ff?si=qyyAM2Xa-ow4T6qm" target="_blank">YouTube</a>
+    <a class="facebook" href="https://www.facebook.com/share/16jbNHUaaL/" target="_blank">Facebook</a>
+  </div>
+
+  <div class="card" onclick="openPopup('🔥 Like+Visitor Bot সেট-আপ')">
+    🔥 Like+Visitor Bot সেট-আপ
+  </div>
+
+  <!-- POPUP -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2 id="popupText">Setup</h2>
+      <p>Step 1 -: অ্যাপ ইনস্টল করুন !</p>
+      <p>Step 2 -: অ্যাপ ওপেন করুন !</p>
+      <p>Step 3 -: অ্যাপ এর ভিতরে থাকা টেলিগ্রাম গ্রুপে জয়েন করুন !</p>
+      <p>Step 4 -: এখন মেসেজে যান !</p>
+      <p>Step 5 -: / দিয়ে visit লিখে bd লিখে তারপর আপনার uid দিবেন !</p>
+      <p>যেমন -: /visit bd 1109118534</p>
+      <p>Step 6 -: তারপর গেম ওপেন করুন !</p>
+      <p>⚠️ যদি অ্যাপ ইনস্টল করতে ভুলে যান তাহলে নিচের দেওয়া ওয়েবসাইট থেকে ডাওনলোড করে নিন 📢</p>
+
+      <button class="download" onclick="downloadNow()">⬇ Download Now</button>
+      <button class="close" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <footer>
+    ©2026 MINHAJ AFRAD SET-UP
+  </footer>
+
+  <script>
+    function openPopup(text) {
+      document.getElementById('popupText').innerText = text;
+      document.getElementById('popup').style.display = 'flex';
+    }
+
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    function downloadNow() {
+      window.open("https://gamingminhaj.netlify.app/", "_blank");
+    }
+  </script>
+
+</body>
+</html>
